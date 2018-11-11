@@ -1,1 +1,2 @@
-addition from the local branch haara1
+addition from the local branch haara1.
+this is an addition from the secon copy of the local repo.
