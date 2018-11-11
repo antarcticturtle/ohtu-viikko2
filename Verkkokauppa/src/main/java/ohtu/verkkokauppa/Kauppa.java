@@ -1,7 +1,10 @@
 package ohtu.verkkokauppa;
 
 import java.util.ArrayList;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Kauppa {
 
     private VarastoInterface varasto;
@@ -10,7 +13,7 @@ public class Kauppa {
     private ViitegeneraattoriInterface viitegeneraattori;
     private String kaupanTili;
 
-
+    @Autowired
     public Kauppa(VarastoInterface v, PankkiInterface p, ViitegeneraattoriInterface vg ){
         this.varasto = v; 
         this.pankki = p; 
