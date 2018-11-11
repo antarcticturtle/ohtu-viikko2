@@ -5,6 +5,8 @@
  */
 package ohtu.verkkokauppa;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author reetta
@@ -18,5 +20,7 @@ public interface VarastoInterface {
     void palautaVarastoon(Tuote t);
 
     int saldo(int id);
+    
+    ArrayList<String> getTapahtumat();
     
 }

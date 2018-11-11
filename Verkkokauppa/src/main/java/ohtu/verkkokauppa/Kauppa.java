@@ -1,5 +1,7 @@
 package ohtu.verkkokauppa;
 
+import java.util.ArrayList;
+
 public class Kauppa {
 
     private VarastoInterface varasto;
@@ -39,5 +41,8 @@ public class Kauppa {
         
         return pankki.tilisiirto(nimi, viite, tiliNumero, kaupanTili, summa);
     }
-
+    
+    public ArrayList<String> getTapahtumat() {
+        return this.varasto.getTapahtumat();
+    }      
 }
